@@ -95,7 +95,7 @@
   border-radius: 8px;
 }
 
-div:has(.select-arrow-active) .select-selected{
+div:has(.select-arrow-active) .select-selected {
   border-radius: 8px 8px 0 0 !important;
 }
 
@@ -146,17 +146,16 @@ div:has(.select-arrow-active) .select-selected{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-
-.line-input input{
+.line-input input {
   width: 100% !important;
   max-width: 100%;
 }
 
-.textarea{
+.textarea {
   margin-top: 20px;
 }
 
-.textarea textarea{
+.textarea textarea {
   width: 100%;
   border-radius: 8px;
   border: 0;
@@ -167,62 +166,70 @@ div:has(.select-arrow-active) .select-selected{
   font-family: "Inter";
 }
 
-.submit-btn{
+.submit-btn {
   margin-top: 20px;
 }
 
-.send-btn{
+.send-btn {
   padding: 18px 20px;
   max-width: 221px;
   width: 100%;
   border-radius: 10px;
   border: 0;
-  background: #1A1A1A;
+  background: #1a1a1a;
   color: #fff;
 }
-.send-btn:hover{
+.send-btn:hover {
   background: #262626;
 }
 
-
 @media screen and (max-width: 390px) {
-
-  .voodoo{
+  .voodoo {
     height: 100%;
     padding: 50px 20px;
     box-sizing: border-box;
   }
 
-  .container__body{
+  .container__body {
     display: flex;
     flex-direction: column;
   }
 
-  .contact{
+  .contact {
     width: 100%;
     padding: 0;
   }
 
-  
-  .map{
+  .map {
     width: inherit;
     height: 600px;
     margin-top: 30px;
   }
 
-  .pair__inputs_item{
+  .pair__inputs_item {
     width: 100%;
     max-width: 100%;
   }
 
-
-  .select-selected{
+  .select-selected {
     margin: 20px 0;
   }
 
-  .custom-select{
+  .custom-select {
     width: 100% !important;
     max-width: 100%;
   }
 
+  .select-selected.select-arrow-active:after {
+    top: 37px;
+  }
+
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 78%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
 }
